@@ -86,51 +86,34 @@ html::before {
       color-mix(in oklch, var(--bg) 88%, var(--sage)) min(6%, 4.5rem),
       transparent min(22%, 14rem)
     ),
-    /* 左外缘折痕（偏竖） */
+    /* 书脊侧软书缝（竖向、偏左，像摊开的书靠装订一侧略凹） */
     linear-gradient(
-      96deg,
+      90deg,
       transparent 0%,
-      transparent 5%,
-      var(--paper-crease-mid) 6.2%,
-      var(--paper-crease) 6.55%,
-      var(--paper-crease-mid) 6.9%,
-      transparent 8%,
+      transparent min(9%, 3.25rem),
+      var(--paper-crease-faint) min(11%, 3.85rem),
+      var(--paper-crease-mid) min(12.2%, 4.35rem),
+      var(--paper-crease-faint) min(13.2%, 4.85rem),
+      transparent min(15%, 5.5rem),
       transparent 100%
     ),
-    /* 右外缘折痕 */
+    /* 页身里很淡的横向起伏（宽而浅，不像对角折痕） */
     linear-gradient(
-      84deg,
+      180deg,
       transparent 0%,
-      transparent 91%,
-      var(--paper-crease-mid) 92.2%,
-      var(--paper-crease) 92.55%,
-      var(--paper-crease-mid) 92.9%,
-      transparent 94%,
-      transparent 100%
-    ),
-    /* 斜穿画面的软折痕（主要落在两侧空白区） */
-    linear-gradient(
-      119deg,
-      transparent 0%,
-      transparent 40%,
-      var(--paper-crease-faint) 48%,
-      var(--paper-crease-mid) 49.35%,
-      var(--paper-crease) 50%,
-      var(--paper-crease-mid) 50.65%,
-      var(--paper-crease-faint) 52%,
-      transparent 60%,
+      transparent 52%,
+      var(--paper-crease-faint) 58%,
+      var(--paper-crease-mid) 61%,
+      var(--paper-crease-faint) 64%,
+      transparent 70%,
       transparent 100%
     ),
     linear-gradient(
-      71deg,
+      180deg,
       transparent 0%,
-      transparent 32%,
-      var(--paper-crease-faint) 43%,
-      var(--paper-crease-mid) 49.2%,
-      var(--paper-crease) 50%,
-      var(--paper-crease-mid) 50.8%,
-      var(--paper-crease-faint) 57%,
-      transparent 68%,
+      transparent 22%,
+      color-mix(in srgb, var(--paper-crease-faint) 65%, transparent) 28%,
+      transparent 34%,
       transparent 100%
     ),
     /* 下角轻微起伏，像纸角被捏过 */
@@ -159,7 +142,24 @@ body {
       linear-gradient(180deg, var(--paper-crease-faint) 0, transparent 56px),
       linear-gradient(90deg, var(--paper-edge-l) 0%, transparent min(28%, 10rem)),
       linear-gradient(270deg, var(--paper-edge-r) 0%, transparent min(28%, 10rem)),
-      linear-gradient(118deg, transparent 38%, var(--paper-crease-mid) 49.5%, var(--paper-crease) 50%, var(--paper-crease-mid) 50.5%, transparent 62%);
+      linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent 6%,
+        var(--paper-crease-faint) 8%,
+        var(--paper-crease-mid) 9.2%,
+        var(--paper-crease-faint) 10.2%,
+        transparent 12%,
+        transparent 100%
+      ),
+      linear-gradient(
+        180deg,
+        transparent 0%,
+        transparent 48%,
+        var(--paper-crease-faint) 56%,
+        transparent 64%,
+        transparent 100%
+      );
   }
 }
 
