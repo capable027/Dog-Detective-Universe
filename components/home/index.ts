@@ -1,0 +1,9 @@
+export { AboutSection } from "./AboutSection";
+export { ContactSection } from "./ContactSection";
+export { HeroSection } from "./HeroSection";
+export { HobbiesSection } from "./HobbiesSection";
+export { RevealSection } from "./RevealSection";
+export { SectionTitle } from "./SectionTitle";
+export { SiteFooter } from "./SiteFooter";
+export { SkillsSection } from "./SkillsSection";
+export { WorksSection } from "./WorksSection";
