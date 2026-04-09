@@ -1,22 +1,22 @@
 /** 首页文案与列表数据，改这里即可迭代大部分内容 */
 
 export const heroContent = {
-  label: "进来坐坐呗",
-  greeting: "嗨，你来了",
+  label: "别看了进来好不",
+  greeting: "嗨害嗨，你好你好",
   nameHighlight: "“I'm glad you came”",
-  sloganLine1: "计算机科学与技术 · 大三",
+  sloganLine1: "计算机科学与技术 · 05",
   sloganLine2: "我劝你，大步往明天去",
   infoStrip: [
     { key: "就读院校", value: "华中师范大学" },
     { key: "专业", value: "计算机科学与技术" },
-    { key: "年级", value: "大三" },
+    { key: "年级", value: "2023级" },
     { key: "坐标", value: "上海 ｜ 武汉" },
   ],
   tags: ["喜欢睡觉", "也喜欢发呆", "建设自己ing"],
 } as const;
 
 export const aboutContent = {
-  title: "关于我这个人类",
+  title: "关于这个碳基生物",
   paragraphs: [
     "淡淡的就会顺顺的",
     "很喜欢为了爱去做一些疯狂的事 比如去音乐节夜排",
